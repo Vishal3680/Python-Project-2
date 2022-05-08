@@ -13,7 +13,7 @@ while(Userguess!=randNumber):
         print("You are wrong! Please enter larger number")
 print(f"You have guessed in {guessess} guessess")
 
-with open("another.txt") as f:
+with open("another.txt") as f:    #Create the txt file for store the highscore
     highscore=int(f.read())
 if highscore>guessess:
     print("You have broken the highscore")
